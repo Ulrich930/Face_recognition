@@ -36,8 +36,10 @@ for i in range(len(faces)):
     print("Cadre du visage n° {0} --> {1} ".format(i+1, faces[i]))
 for i in range(len(faces)) :
     crop_img = image[faces[i][1]:faces[i][1]+faces[i][3], faces[i][0] :faces[i][0]+faces[i][2]]
-    cv2.imwrite('C:/Users/user/Face_recognition/image_card' +str(i) + '.jpg', crop_img)
+    cv2.imwrite('C:/Users/user/Face_recognition/image_carde' +str(i) + '.jpg', crop_img)
 cv2.imshow('Le resultat', crop_img)
+
+
 cv2.waitKey(0)
 
 cv2.destroyAllWindows()
